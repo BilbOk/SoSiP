@@ -16,7 +16,7 @@ Install Jellyfish : http://www.genome.umd.edu/jellyfish.html
 
 The library compiles with GNU GCC and G++ . It successfully compiles and runs on Xubuntu 16.04 and 17.04.
 
-1. Clone this repository : `git clone https://github.com/BilbOk/SoSiP.git`
+1. Clone this repository : `git clone https://github.com/SoSiP/So-NICE.git`
 2. Compile ensemble : `cd Ensemble && make`
 3. Place the ensemble binary somewhere acessible in your `$PATH`
 
