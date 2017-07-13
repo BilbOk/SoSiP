@@ -2,7 +2,7 @@
 
 ## Overview
 
-Sofa - New Intuitive Comparativ Expression
+Sofa - New Intuitive Comparative Expression
 
 We propose you a simple tool to compare genomics data. You can easily compare genomes on their words (expression) instead of their structure.
 We will call genome\_1 G1, genome\_i Gi and genome\_n Gn.
