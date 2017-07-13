@@ -1,10 +1,10 @@
-# SoSiP
+# So-NICE
 
 ## Overview
 
-Sofa Side Project
+Sofa - New Intuitive Comparativ Expression
 
-We propose you a simple tool to compare genomics data. You can easily compare genomes on their words instead of their structure.
+We propose you a simple tool to compare genomics data. You can easily compare genomes on their words (expression) instead of their structure.
 We will call genome\_1 G1, genome\_i Gi and genome\_n Gn.
 
 ## Dependencies
