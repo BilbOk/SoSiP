@@ -34,11 +34,19 @@ jellyfish count -m 24 -s 500M -o sample\_n.jf <(zcat sample\_n.fastq.gz)
 jellyfish dump  -c sample\_n.jf | sort -k 1 > Gn.jf
 ```
 Then, create your matrix with ensemble:
-`ensemble G1.jf ... Gi.jf ... Gn.jf > matrix.tsv`
+```
+ensemble G1.jf ... Gi.jf ... Gn.jf > matrix.tsv
+```
+
 Use matrix2vennD.sh to get all stats you need to create a Venn Diagram.
-`./matrix2vennD matrix.tsv > vennD.txt`
+```
+./matrix2vennD matrix.tsv > vennD.txt
+```
+
 Then use ven2plot.sh to get the plot:
-`./ven2plot.sh vennD.txt plot\_name.pdf`
+```
+./ven2plot.sh vennD.txt plot\_name.pdf
+```
 
 Enjoy :)
 
