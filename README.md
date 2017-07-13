@@ -22,10 +22,25 @@ The library compiles with GNU GCC and G++ . It successfully compiles and runs on
 
 ## Usage
 
-First, create your matrix with ensemble:
-`ensemble G1 ... Gi ... Gn > matrix.tsv`
+First, create your kmer dataset with jellyfish :
+```
+jellyfish count -m 24 -s 500M -o sample\_1.jf <(zcat sample\_1.fastq.gz)
+jellyfish dump  -c sample\_1.jf | sort -k 1 > G1.jf
+...
+jellyfish count -m 24 -s 500M -o sample\_i.jf <(zcat sample\_i.fastq.gz)
+jellyfish dump  -c sample\_i.jf | sort -k 1 > Gi.jf
+...
+jellyfish count -m 24 -s 500M -o sample\_n.jf <(zcat sample\_n.fastq.gz)
+jellyfish dump  -c sample\_n.jf | sort -k 1 > Gn.jf
+```
+Then, create your matrix with ensemble:
+`ensemble G1.jf ... Gi.jf ... Gn.jf > matrix.tsv`
 Use matrix2vennD.sh to get all stats you need to create a Venn Diagram.
- 
+`./matrix2vennD matrix.tsv > vennD.txt`
+Then use ven2plot.sh to get the plot:
+`./ven2plot.sh vennD.txt plot\_name.pdf`
+
+Enjoy :)
 
 ## TODO :
 
