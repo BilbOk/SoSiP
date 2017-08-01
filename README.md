@@ -10,6 +10,7 @@ We will call genome\_1 G1, genome\_i Gi and genome\_n Gn.
 ## Dependencies
 
 Install zlib : (debian : sudo apt-get install zlib1g-dev)
+
 Install Jellyfish : http://www.genome.umd.edu/jellyfish.html
 
 ## Installation 
